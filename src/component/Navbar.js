@@ -76,7 +76,7 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                        JOB FINDER
+                        JOB Junction
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -132,7 +132,7 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                        JOB FINDER
+                        JOB Junction
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {/* menu desktop */}
