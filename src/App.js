@@ -18,6 +18,8 @@ import DashJobs from './pages/admin/DashJobs'
 import DashCreateJob from './pages/admin/DashCreateJobs';
 import DashEditJob from './pages/admin/DashEditJobs';
 import AdminRoute from './component/AdminRoutes';
+import { compose } from 'redux';
+import { Component } from 'react';
 
 const UserDashboardHOC = Layout(UserDashboard);
 const UserJobsHistoryHOC = Layout(UserJobsHistory);
@@ -35,7 +37,7 @@ const App = () => {
                 <ProSidebarProvider>
                 <BrowserRouter>
                     <Routes>
-                        <Route path='/' element={<Home />} />
+                        <Route path='/' element={<Home /> } />
                         <Route path='/login' element={<LogIn />} />
                         {/* <Route path='/logout' element={<LogIn />} /> */}
                         <Route path='/register' element={<Register/>} />
