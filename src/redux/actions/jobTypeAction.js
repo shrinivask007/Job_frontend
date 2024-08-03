@@ -6,7 +6,7 @@ import { JOB_TYPE_LOAD_FAIL, JOB_TYPE_LOAD_REQUEST, JOB_TYPE_LOAD_SUCCESS } from
 export const jobTypeLoadAction = () => async (dispatch) => {
     dispatch({ type: JOB_TYPE_LOAD_REQUEST });
     try {
-        const { data } = await axios.get('/api/type/jobs');
+        const { data } = await axios.get('https://job-finder-backend-bz06.onrender.com/api/type/jobs');
         dispatch({
             type: JOB_TYPE_LOAD_SUCCESS,
             payload: data
