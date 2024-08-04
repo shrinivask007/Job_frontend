@@ -66,7 +66,7 @@ export const deleteSingleJobAction = (job_id) => async (dispatch) => {
 export const editSingleJobAction = (job) => async (dispatch) => {
     dispatch({ type: EDIT_JOB_REQUEST });
     try {
-        const { data } = await axios.put(`/api/job/update/${job._id}`, job);
+        const { data } = await axios.put(`https://job-finder-backend-bz06.onrender.com/api/job/update/${job._id}`, job);
         dispatch({
             type: EDIT_JOB_SUCCESS,
             payload: data
