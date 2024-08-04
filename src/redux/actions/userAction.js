@@ -101,7 +101,7 @@ export const userProfileAction = () => async (dispatch) => {
 export const userApplyJobAction = (job) => async (dispatch) => {
     dispatch({ type: USER_APPLY_JOB_REQUEST });
     try {
-        const { data } = await axios.post("https://job-finder-backend-bz06.onrender.com/api/user/jobhistory", job);
+        const { data } = await axios.post("/api/user/jobhistory", job);
 
         dispatch({
             type: USER_APPLY_JOB_SUCCESS,
