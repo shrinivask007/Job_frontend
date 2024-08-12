@@ -13,7 +13,7 @@ const Footer = () => {
                 justifyContent: 'center',
                 alignItems: 'center'
             }}>
-                <Box component='span' sx={{ color: palette.primary.main }}>All rights reserved! 2024 Made By Saksham Kapadnis.</Box>
+                <Box component='span' sx={{ color: palette.primary.main }}>All rights reserved! 2024 Made By Shrinivas Kathare.</Box>
 
             </Box>
         </>
